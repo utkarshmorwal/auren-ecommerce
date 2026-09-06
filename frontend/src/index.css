@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #17151f;
+  --color-ink-light: #211e2e;
+  --color-paper: #f5f4fb;
+  --color-paper-dim: #eceafa;
+  --color-stone: #d9d4ec;
+  --color-verdant: #4338ca;
+  --color-verdant-light: #6366f1;
+  --color-ember: #e11d48;
+  --color-ember-light: #fb7185;
+
+  --font-display: "Bricolage Grotesque", sans-serif;
+  --font-sans: "Sora", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+html, body {
+  overflow-x: clip;
+  width: 100%;
+}
+
+* {
+  min-width: 0;
+}
